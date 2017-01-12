@@ -10,7 +10,6 @@ export default Ember.Component.extend({
       console.log(this);
       var params = {
         author: this.get('author'),
-        category: "",
         date: new Date().toDateString(),
         image: this.get('image'),
         text: this.get('text'),
