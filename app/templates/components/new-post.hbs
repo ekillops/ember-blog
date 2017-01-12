@@ -1,0 +1,16 @@
+{{#if showNewForm}}
+  <h4>New Blog Post:</h4>
+  <form>
+    {{input class="form-control" id="title" name="title" placeholder="Title"}}
+    <br>
+    {{input class="form-control" id="author" name="author" placeholder="Author"}}
+    <br>
+    {{textarea class="form-control" id="text" name="text" placeholder="Post text"}}
+    <br>
+    {{input class="form-control" id="image" name="image" placeholder="Image url"}}
+    <br>
+    <button class="btn btn-info" {{action 'savePost'}}>Post</button>
+  </form>
+{{else}}
+  <button class="btn btn-info" {{action 'newPost'}}>New Post</button>
+{{/if}}

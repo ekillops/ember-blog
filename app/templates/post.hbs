@@ -5,5 +5,7 @@
 <br>
 <p>{{model.text}}</p>
 <hr>
-<button class="btn btn-info" {{action 'editPost' model}}>Edit Post</button>
+<button class="btn btn-info" {{action 'delete' model}}>Delete</button>
+
 <br>
+{{edit-post post=model updatePost='updatePost'}}

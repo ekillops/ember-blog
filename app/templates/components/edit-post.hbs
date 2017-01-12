@@ -1,0 +1,17 @@
+{{#if showEditForm}}
+  <h4>Edit Post:</h4>
+  <form>
+    <label for="title">Post Title</label>
+    {{input class="form-control" id='title' value=post.title}}
+
+    <label for="image">Image URL</label>
+    {{input class="form-control" id='image' value=post.image}}
+
+    <label for="text">Post Text</label>
+    {{textarea class="form-control" id='text' value=post.text}}
+    <br>
+    <button class="btn btn-info" {{action 'updatePost' post}}>Update</button>
+  </form>
+{{else}}
+  <button class="btn btn-info" {{action 'showForm'}}>Edit</button>
+{{/if}}
