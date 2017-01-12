@@ -2,9 +2,8 @@
 
   <h4>Comments:</h4>
   <br>
-  {{log post.comments}}
   {{#each post.comments as |comment|}}
-    {{comment-tile comment=comment}}
+    {{comment-tile deleteComment='deleteComment' post=post comment=comment}}
   {{/each}}
   <br>
   {{comment-form post=post saveComment='saveComment'}}

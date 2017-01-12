@@ -7,7 +7,6 @@ export default Ember.Component.extend({
       this.set('showNewForm', true);
     },
     savePost() {
-      console.log(this);
       var params = {
         author: this.get('author'),
         date: new Date().toDateString(),

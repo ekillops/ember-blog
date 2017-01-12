@@ -10,6 +10,11 @@ export default Ember.Component.extend({
 
     saveComment(params) {
       this.sendAction('saveComment', params);
+    },
+
+    deleteComment(params) {
+      this.sendAction('deleteComment', params);
+      this.set('showComments', false);
     }
   }
 });
