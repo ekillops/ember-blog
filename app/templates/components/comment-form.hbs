@@ -1,0 +1,12 @@
+{{#if showCommentForm}}
+  <label>New Comment</label>
+  <form>
+    {{input class="form-control" value=author id="author" placeholder="Author"}}
+    <br>
+    {{textarea class="form-control" value=text id="text" placeholder="Comment Text"}}
+    <br>
+    <button class="btn btn-xs btn-warning" {{action 'saveComment'}}>Comment</button>
+  </form>
+{{else}}
+  <button class="btn btn-xs btn-warning" {{action 'newComment'}}>Leave a comment</button>
+{{/if}}

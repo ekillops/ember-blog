@@ -1,0 +1,14 @@
+{{#if showComments}}
+
+  <h4>Comments:</h4>
+  <br>
+  {{log post.comments}}
+  {{#each post.comments as |comment|}}
+    {{comment-tile comment=comment}}
+  {{/each}}
+  <br>
+  {{comment-form post=post saveComment='saveComment'}}
+
+{{else}}
+  <button class="btn btn-xs btn-warning" {{action 'viewComments'}}>Comments</button>
+{{/if}}

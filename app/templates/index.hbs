@@ -1,5 +1,5 @@
-{{#each model as |post|}}
-  {{post-tile viewPost='viewPost' post=post}}
+{{#each model.posts as |post|}}
+  {{post-tile viewPost='viewPost' saveComment='saveComment' post=post}}
   <br>
 {{/each}}
 

@@ -7,5 +7,6 @@
 <hr>
 <button class="btn btn-info" {{action 'delete' model}}>Delete</button>
 
-<br>
 {{edit-post post=model updatePost='updatePost'}}
+
+{{post-comments post=model saveComment='saveComment'}}

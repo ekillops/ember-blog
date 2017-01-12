@@ -5,21 +5,52 @@
       "image": "https://static.pexels.com/photos/6064/coffee-laptop-notebook-working.jpg",
       "author": "John Doe",
       "text": "Est proident exercitation deserunt ex nisi dolor sit sunt nisi labore exercitation ipsum. Est ex nostrud amet reprehenderit sint officia id. Adipisicing laborum excepteur dolor veniam occaecat. Officia dolore exercitation sint ad elit sint ipsum sunt pariatur eiusmod eiusmod est. Pariatur sit elit amet cupidatat proident magna ad Lorem elit nisi anim non quis velit. Proident culpa nulla et occaecat qui nulla ipsum. Consequat enim dolore est incididunt tempor ipsum fugiat cillum. Pariatur excepteur pariatur officia tempor sit culpa sunt do pariatur. In est voluptate id consectetur excepteur aliquip laborum dolore quis aliquip labore. Officia esse eiusmod deserunt sunt amet.",
-      "date": "1/1/2017"
+      "date": "Sun Jan 1 2017",
+      "comments": [
+        {
+          "author": "cool_guy_50",
+          "text": "Wrong! Poster is obviously a Shillary supporter, brainwashed by the socialist lamestream media!",
+          "date": "Mon Jan 2 2017"
+        },
+        {
+          "author": "smash_the_state",
+          "text": "What are you talking about?",
+          "date": "Mon Jan 2 2017"
+        }
+      ]
     },
     {
       "title": "Second Post",
       "image": "https://static.pexels.com/photos/48727/pexels-photo-48727.jpeg",
       "author": "John Doe",
       "text": "Exercitation excepteur nulla consectetur dolore culpa ea ad id dolor consequat pariatur. Velit qui incididunt consequat tempor dolore aliquip nulla incididunt velit mollit esse sint. Ea nulla excepteur pariatur ipsum consequat quis qui dolor eu esse adipisicing pariatur. Consequat labore nisi aliquip esse labore. Ad est excepteur dolore elit nostrud laborum dolore ex eiusmod ullamco ea. In eiusmod excepteur tempor ut anim. Commodo adipisicing voluptate eiusmod laborum. Proident esse ea excepteur ullamco aliquip anim reprehenderit ipsum nisi nulla. Dolor aliquip ea elit cupidatat nostrud tempor ad. Esse adipisicing non cillum consectetur minim enim in consequat commodo duis culpa dolore fugiat do. Proident in ut cillum irure ullamco esse.",
-      "date": "1/5/2017"
+      "date": "Thu Jan 5 2017",
+      "comments": [
+        {
+          "author": "cat_lover_22",
+          "text": "I love your posts. So insightful!",
+          "date": "Fri Jan 6 2017"
+        }
+      ]
     },
     {
       "title": "Third Post",
       "image": "https://static.pexels.com/photos/261577/pexels-photo-261577.jpeg",
       "author": "John Doe",
       "text": "Ullamco cillum aliqua tempor voluptate dolor nulla. Nisi ex pariatur aute officia exercitation consectetur aute pariatur sint Lorem id velit pariatur ut. Sint consequat magna ut aliqua laborum. Enim laboris ad qui excepteur esse amet cillum adipisicing. Anim qui sint exercitation ullamco adipisicing do sit eu nulla velit do aliqua in. Irure aute in labore amet id ad deserunt aliqua culpa aute labore sint ut. Occaecat officia dolore voluptate magna minim voluptate elit ipsum reprehenderit officia.",
-      "date": "1/10/2017"
+      "date": "Tue Jan 10 2017",
+      "comments": [
+        {
+          "author": "rand0dude",
+          "text": "Cool story, guy!",
+          "date": "Wed Jan 11 2017"
+        },
+        {
+          "author": "smash_the_state",
+          "text": "Dude!",
+          "date": "Wed Jan 11 2017"
+        }
+      ]
     }
   ]
 }
