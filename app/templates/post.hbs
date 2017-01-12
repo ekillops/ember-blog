@@ -1,1 +1,9 @@
 <!--Top Level-->
+<img class="post-image img-responsive" src={{model.image}} alt="Post image">
+<h2>{{model.title}}</h2>
+<p><small>By</small> {{model.author}}, <small>{{model.date}}</small></p>
+<br>
+<p>{{model.text}}</p>
+<hr>
+<button class="btn btn-info" {{action 'editPost' model}}>Edit Post</button>
+<br>

@@ -1,5 +1,16 @@
-<h4>{{post.title}}</h4>
-<img class="tile-image" src={{post.image}} alt="Post image">
-<p><small>By</small> {{post.author}}, <small>{{post.date}}</small></p>
-<br>
-<p>{{post.text}}</p>
+<div class="post-tile">
+  <!-- onclick={{action 'viewPost' post.id}} -->
+  <div class="row">
+    <div class="col-md-5">
+      <img class="post-tile-image img-responsive" src={{post.image}} alt="Post image">
+    </div>
+    <div class="col-md-7">
+      <h4>{{post.title}}</h4>
+      <br>
+      <p>{{post.text}}</p>
+      <p><small>By</small> {{post.author}}, <small>{{post.date}}</small></p>
+      <button class="btn btn-xs btn-link" {{action 'viewPost' post.id}}>View Post</button>
+    </div>
+  </div>
+    <hr>
+</div>
