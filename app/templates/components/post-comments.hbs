@@ -1,13 +1,12 @@
+<!-- post/post-comments -->
+<button class="btn btn-xs btn-warning" {{action 'viewComments'}}>Comments</button>
 {{#if showComments}}
-
+  {{comment-form post=post saveComment='saveComment'}}
+  <br>
   <h4>Comments:</h4>
   <br>
   {{#each post.comments as |comment|}}
-    {{comment-tile deleteComment='deleteComment' post=post comment=comment}}
+    {{comment-tile deleteComment='deleteComment' updateComment='updateComment' post=post comment=comment}}
   {{/each}}
   <br>
-  {{comment-form post=post saveComment='saveComment'}}
-
-{{else}}
-  <button class="btn btn-xs btn-warning" {{action 'viewComments'}}>Comments</button>
 {{/if}}

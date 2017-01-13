@@ -18,8 +18,15 @@ export default Ember.Route.extend({
     },
 
     delete(post) {
-      post.destroyRecord();
-      this.transitionTo('index');
+      if (confirm('Are you sure you want to delete this post?')) {
+        var deleteRelatedComments = post.get('comments').map(function(comment) {
+          return comment.destroyRecord();
+        });
+        Ember.RSVP.all(deleteRelatedComments).then(function() {
+          post.destroyRecord();
+        });
+        this.transitionTo('index');
+      }
     },
 
     saveComment(params) {
@@ -33,10 +40,17 @@ export default Ember.Route.extend({
     },
 
     deleteComment(params) {
-      console.log('post');
       var comment = params.comment;
       var postId = params.post.id;
       comment.destroyRecord();
+      this.transitionTo('post', postId);
+    },
+
+    updateComment(params, comment) {
+      console.log('post');
+      var postId = params.post.id;
+      comment.set('text', params.newText);
+      comment.save();
       this.transitionTo('post', postId);
     }
   }

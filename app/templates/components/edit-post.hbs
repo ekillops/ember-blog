@@ -1,3 +1,4 @@
+<!-- post/edit-post -->
 {{#if showEditForm}}
   <br>
   <h4>Edit Post:</h4>
@@ -11,8 +12,8 @@
     <label for="text">Post Text</label>
     {{textarea class="form-control" id='text' value=post.text}}
     <br>
-    <button class="btn btn-info" {{action 'updatePost' post}}>Update</button>
+    <button class="btn btn-info btn-xs" {{action 'updatePost' post}}>Update</button>
   </form>
 {{else}}
-  <button class="btn btn-info" {{action 'showForm'}}>Edit</button>
+  <button class="btn btn-info btn-xs" {{action 'showForm'}}>Edit</button>
 {{/if}}

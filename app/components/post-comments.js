@@ -5,7 +5,7 @@ export default Ember.Component.extend({
   actions: {
 
     viewComments() {
-      this.set('showComments', true);
+      this.toggleProperty('showComments');
     },
 
     saveComment(params) {
@@ -15,6 +15,11 @@ export default Ember.Component.extend({
     deleteComment(params) {
       this.sendAction('deleteComment', params);
       this.set('showComments', false);
+    },
+
+    updateComment(params, comment) {
+      console.log('post-comments');
+      this.sendAction('updateComment', params, comment);
     }
   }
 });

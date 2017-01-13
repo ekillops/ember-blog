@@ -9,14 +9,14 @@ export default Ember.Component.extend({
 
     saveComment() {
       var params = {
-        author: this.get('author'),
-        text: this.get('text'),
+        author: this.get('author') ? this.get('author') : "Guest",
+        text: this.get('text') ? this.get('text') : "",
         date: new Date().toDateString(),
-        post: this.get('post')
+        post: this.get('post') ? this.get('post') : ""
       };
       this.sendAction('saveComment', params);
       this.set('showCommentForm', false);
     },
-    
+
   }
 });

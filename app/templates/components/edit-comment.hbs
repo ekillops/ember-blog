@@ -1,0 +1,11 @@
+<!-- post/post-comments/comment-tile/edit-comment -->
+{{#if showEditForm}}
+  <form>
+    <label>Edit Comment</label>
+    <br>
+    {{textarea value=text placeholder="New comment value"}}
+    <button class="btn btn-xs btn-info" {{action 'updateComment' comment}}>Update</button>
+  </form>
+{{else}}
+  <button class="btn btn-xs btn-link" {{action 'editComment'}}><small>Edit</small></button>
+{{/if}}

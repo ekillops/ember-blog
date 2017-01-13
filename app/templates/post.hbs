@@ -5,8 +5,8 @@
 <br>
 <p>{{model.text}}</p>
 <hr>
-<button class="btn btn-info" {{action 'delete' model}}>Delete</button>
+<button class="btn btn-info btn-xs" {{action 'delete' model}}>Delete Post</button>
 
 {{edit-post post=model updatePost='updatePost'}}
 
-{{post-comments deleteComment='deleteComment' post=model saveComment='saveComment'}}
+{{post-comments deleteComment='deleteComment' updateComment='updateComment' post=model saveComment='saveComment'}}
